@@ -1,0 +1,900 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background: #171b21;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+
+.signature-wrapper {
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+/* =========================================
+   SIGNATURE CARD
+========================================= */
+
+.signature-card {
+
+    width: 100%;
+    min-height: 400px;
+
+    display: grid;
+    grid-template-columns: 40% 1px 60%;
+
+    background: #ffffff;
+
+    color: #15191f;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.35);
+
+    position: relative;
+}
+
+
+/* =========================================
+   LEFT PROFILE
+========================================= */
+
+.profile-section {
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f2f4f6 100%
+        );
+}
+
+
+/* =========================================
+   PROFILE CIRCLE
+========================================= */
+
+.profile-circle {
+
+    min-width: 145px;
+    width: 145px;
+    height: 145px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00aaa9,
+            #007b83
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 7px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 150, 150, 0.25);
+
+    transition: 0.4s ease;
+}
+
+
+.profile-circle:hover {
+
+    transform: translateY(-8px) rotate(3deg);
+
+    box-shadow:
+        0 20px 40px rgba(0, 150, 150, 0.35);
+}
+
+
+.profile-inner {
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    background: #20252c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+
+    font-size: 48px;
+}
+
+
+/* =========================================
+   PROFILE TEXT
+========================================= */
+
+.profile-info h1 {
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: #1c242b;
+}
+
+
+.profile-info h2 {
+
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    color: #008c91;
+
+    line-height: 1.6;
+}
+
+
+.profile-info h2 span {
+    color: #222;
+}
+
+
+.line {
+
+    width: 55px;
+    height: 3px;
+
+    background: #00a7a7;
+
+    margin: 14px 0;
+}
+
+
+.short-text {
+
+    max-width: 270px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #687078;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+
+    width: 1px;
+
+    background: #dfe3e6;
+
+    margin: 40px 0;
+}
+
+
+/* =========================================
+   RIGHT CONTACT
+========================================= */
+
+.contact-section {
+
+    padding: 38px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.signature-name {
+
+    font-family: "Allura", cursive;
+
+    font-size: 58px;
+
+    color: #1b2228;
+
+    line-height: 1;
+
+    margin-bottom: 2px;
+}
+
+
+.professional-title {
+
+    color: #008e92;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.contact-list a,
+.contact-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: #555f67;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+
+.contact-list a:hover {
+
+    color: #008e92;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.icon {
+
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #e7f7f7;
+
+    color: #008e92;
+
+    font-size: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.action-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.btn {
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.3s ease;
+}
+
+
+.primary-btn {
+
+    color: #ffffff;
+
+    background: #008f92;
+}
+
+
+.primary-btn:hover {
+
+    background: #006e71;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 143, 146, 0.25);
+}
+
+
+.secondary-btn {
+
+    color: #1c242b;
+
+    border: 1px solid #d9dfe2;
+
+    background: #ffffff;
+}
+
+
+.secondary-btn:hover {
+
+    border-color: #008f92;
+
+    color: #008f92;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   BOTTOM BANNER
+========================================= */
+
+.bottom-banner {
+
+    margin-top: 18px;
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            100deg,
+            #007d82,
+            #00aaa9
+        );
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.banner-content {
+
+    min-height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px 30px;
+}
+
+
+.banner-icon {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    flex-shrink: 0;
+}
+
+
+.banner-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.2;
+}
+
+
+.banner-text span {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 500;
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+.banner-text strong {
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+}
+
+
+.arrow {
+
+    margin-left: auto;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #008d91;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+.arrow:hover {
+
+    transform: translateX(8px);
+}
+
+
+.email-button {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    padding: 12px 18px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    border-radius: 7px;
+
+    transition: 0.3s ease;
+}
+
+
+.email-button:hover {
+
+    background: #ffffff;
+
+    color: #008d91;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    font-size: 10px;
+
+    color: #899198;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .signature-card {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .profile-section {
+
+        padding: 35px;
+
+        justify-content: center;
+
+    }
+
+    .divider {
+
+        width: 85%;
+
+        height: 1px;
+
+        margin: 0 auto;
+
+    }
+
+    .contact-section {
+
+        padding: 35px;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+    .contact-list {
+
+        align-items: flex-start;
+
+        text-align: left;
+
+    }
+
+    .action-buttons {
+
+        justify-content: center;
+
+    }
+
+    .banner-content {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+    .arrow {
+
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px 10px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .signature-wrapper {
+
+        margin-top: 10px;
+
+    }
+
+
+    .signature-card {
+
+        border-radius: 15px;
+
+    }
+
+
+    .profile-section {
+
+        padding: 30px 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 18px;
+
+    }
+
+
+    .profile-circle {
+
+        width: 115px;
+
+        height: 115px;
+
+        min-width: 115px;
+
+    }
+
+
+    .profile-inner {
+
+        font-size: 38px;
+
+    }
+  
+
+
+    .profile-info h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .short-text {
+
+        margin: auto;
+
+        font-size: 11px;
+
+    }
+
+
+    .line {
+
+        margin: 12px auto;
+
+    }
+
+
+    .contact-section {
+
+        padding: 30px 20px;
+
+        align-items: center;
+
+    }
+
+
+    .signature-name {
+
+        font-size: 50px;
+
+    }
+
+
+    .professional-title {
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+
+    .contact-list {
+
+        width: 100%;
+
+        gap: 12px;
+
+    }
+
+
+    .contact-list a,
+    .contact-list div {
+
+        font-size: 11px;
+
+    }
+
+
+    .action-buttons {
+
+        width: 100%;
+
+        flex-direction: column;
+
+    }
+
+
+    .btn {
+
+        justify-content: center;
+
+        width: 100%;
+
+    }
+
+
+    .bottom-banner {
+
+        border-radius: 12px;
+
+    }
+
+
+    .banner-content {
+
+        padding: 22px 15px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .banner-icon {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 18px;
+
+    }
+
+
+    .banner-text strong {
+
+        font-size: 14px;
+
+    }
+
+
+    .banner-text span {
+
+        font-size: 8px;
+
+    }
+
+
+    .arrow {
+
+        margin: 0;
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .email-button {
+
+        width: 100%;
+
+        text-align: center;
+
+        font-size: 10px;
+
+        overflow-wrap: anywhere;
+
+    }
+
+
+    footer {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .profile-info h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .signature-name {
+
+        font-size: 44px;
+
+    }
+
+
+    .contact-list a,
+    .contact-list div {
+
+        font-size: 10px;
+
+    }
+
+}
